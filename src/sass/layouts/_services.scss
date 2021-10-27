@@ -1,0 +1,163 @@
+// Section SERVICES
+.process {
+  grid-area: services;
+  margin-bottom: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 2rem 0;
+
+  &__head {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    justify-self: center;
+    text-align: center;
+    color: $color-grey-dark;
+  }
+
+  &__cont {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  &__title {
+    color: $color-secondary-dark;
+  }
+
+  &__txt {
+    color: $color-grey-dark;
+  }
+}
+
+.operations {
+  grid-area: operations;
+
+  margin-bottom: 3rem;
+  border-top: 1px solid $color-grey-light;
+  border-bottom: 10px solid $color-tertiary-medium;
+
+  transition: transform 1s, opacity 1s;
+
+  &__head {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+    margin: 1rem 0 1rem 0;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: start;
+    margin: 2rem 0 1rem 0;
+
+    @include respond(phone) {
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
+
+  &__tab {
+    margin-right: 1.5rem;
+    transform: translateY(-25%);
+  }
+
+  &__content {
+    display: none;
+
+    /* JUST PRESENTATIONAL */
+    font-size: 1.7rem;
+    padding: 2.5rem 5rem;
+    background-color: $color-primary-light;
+  }
+}
+
+.operations__tab--active {
+  transform: translateY(-30%);
+}
+
+.operations__content--active {
+  display: block;
+}
+
+// Section TECH
+.technology {
+  grid-area: tech;
+  margin-bottom: 3rem;
+
+  color: $color-grey-dark;
+  text-align: center;
+
+  &__head {
+    color: $color-grey-dark;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+
+    padding: 2rem 4rem;
+    color: $color-grey-dark;
+  }
+
+  &__pic {
+    grid-column: 1/2;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @include respond(tab-land) {
+      grid-column: 1/-1;
+    }
+
+    &--1 {
+      flex: 1 1 20rem;
+      width: 20rem;
+    }
+    &--2 {
+      flex: 1 1 20rem;
+      width: 20rem;
+    }
+    &--3 {
+      flex: 1 1 20rem;
+      width: 20rem;
+    }
+    &--4 {
+      flex: 1 1 20rem;
+      width: 20rem;
+    }
+    &--5 {
+      flex: 1 1 20rem;
+      width: 20rem;
+    }
+    &--6 {
+      flex: 1 1 20rem;
+      width: 20rem;
+    }
+  }
+
+  &__desc {
+    grid-column: 2/3;
+
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+    color: $color-grey-dark;
+
+    @include respond(tab-land) {
+      grid-column: 1/-1;
+      text-align: center;
+    }
+
+    &--1 {
+      text-align: left;
+    }
+
+    &--2 {
+      text-align: left;
+    }
+  }
+}

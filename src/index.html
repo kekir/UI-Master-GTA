@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Google FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;700&family=Roboto+Slab:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled SAAS style link and favicon image-->
+    <link type="text/css" rel="stylesheet" href="sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <!-- FONTAWESOME -->
+    <script src="https://use.fontawesome.com/6dfc7b2399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Base Theme</title>
+
+    <script type="module" src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- HEADER Container -->
+      <include src="partials/header.html"></include>
+
+      <!-- HERO Container -->
+      <section class="slider">
+        <div class="slide slide--1">
+          <p class="slide__num">1 / 3</p>
+          <img class="slide__pic" src="img/ban-1.jpg" alt="white" />
+          <div class="slide__cont">
+            <h3 class="slide__title heading tertiary sub" screen="five">Modern approach to Frontend design</h3>
+            <blockquote class="slide__text copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis magnam facilis, eveniet quasi repellat quod
+              praesentium illum molestiae soluta.
+            </blockquote>
+            <!-- <a class="slide__readOn btn" href="#text">Read more</a> -->
+            <button class="slide__readOn btn">Read on...</button>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <p class="slide__num">2 / 3</p>
+          <img class="slide__pic" src="img/ban-2.jpg" alt="white" />
+          <div class="slide__cont">
+            <h3 class="slide__title heading tertiary sub" screen="five">Modern approach to Frontend design</h3>
+            <blockquote class="slide__text copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae aperiam id dolore temporibus
+              earum.
+            </blockquote>
+            <button class="slide__readOn btn">Read on...</button>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <p class="slide__num">2 / 3</p>
+          <img class="slide__pic" src="img/ban-3.jpg" alt="white" />
+          <div class="slide__cont">
+            <h3 class="slide__title heading tertiary sub" screen="five">Modern approach to Frontend design</h3>
+            <blockquote class="slide__text copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae aperiam id dolore temporibus
+              earum.
+            </blockquote>
+            <button class="slide__readOn btn">Read on...</button>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <button class="slider__go slider__go--left">&larr;</button>
+        <button class="slider__go slider__go--right">&rarr;</button>
+        <div class="dots"></div>
+      </section>
+
+      <!-- BRAG Container -->
+      <section class="brags">
+        <div class="brags__head">
+          <h2 class="heading secondary">Our Natural Healing Options Are</h2>
+          <p class="copy">
+            Our mission is very clear - <br />provide best and fully tested products and solutions for our customers
+          </p>
+        </div>
+
+        <article class="brags__cont">
+          <i class="icon fa fa-user fa-3x"></i>
+          <h2 class="brags__title heading tertiary">Mauris maximus</h2>
+          <p class="brags__txt copy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem dicta cum voluptate non
+            explicabo maxime dolorum molestias perspiciatis consequuntur!
+          </p>
+        </article>
+
+        <article class="brags__cont">
+          <i class="icon fa fa-camera-retro fa-3x"></i>
+          <h2 class="brags__title heading tertiary">Aliquam euismod</h2>
+          <p class="brags__txt copy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem dicta cum voluptate non
+            explicabo maxime dolorum molestias perspiciatis consequuntur!
+          </p>
+        </article>
+
+        <article class="brags__cont">
+          <i class="icon fa fa-key fa-3x"></i>
+          <h2 class="brags__title heading tertiary">Cras massa</h2>
+          <p class="brags__txt copy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem dicta cum voluptate non
+            explicabo maxime dolorum molestias perspiciatis consequuntur!
+          </p>
+        </article>
+
+        <article class="brags__cont">
+          <i class="icon fa fa-map-marker fa-3x"></i>
+          <h2 class="brags__title heading tertiary">Feugiat ligula</h2>
+          <p class="brags__txt copy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem dicta cum voluptate non
+            explicabo maxime dolorum molestias perspiciatis consequuntur!
+          </p>
+        </article>
+      </section>
+
+      <!-- PARALLAX Container -->
+      <section class="parallax">
+        <div class="parallax__bkgd"></div>
+        <div class="parallax__cont">
+          <h2 class="parrallax__title heading secondary">Amazing title</h2>
+          <p class="copy">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos placeat ab minus? Dolore laboriosam
+            quia facilis commodi totam, debitis nostrum veniam nam reiciendis fugiat dignissimos temporibus, fuga
+            eligendi dolorem dolorum.
+          </p>
+          <button class="btn">Read on...</button>
+        </div>
+      </section>
+
+      <!-- Porgrams Container -->
+      <section class="prog">
+        <h2 class="prog__title heading secondary">Our natural Rejuviantion</h2>
+
+        <article class="prog__cont">
+          <h1 class="prog__title heading tertiary sub">Massage & Spa</h1>
+          <p class="prog__txt copy">This is the best computer money can buy, if you don’t have much money.</p>
+          <ul class="prog__list minCopy">
+            <li class="prog__item">Computer</li>
+            <li class="prog__item">Monitor</li>
+            <li class="prog__item">Keyboard</li>
+            <li class="prog__item">Mouse</li>
+          </ul>
+          <img
+            class="prog__img u-margin-bottom-medium"
+            src="img/prog-1.jpg"
+            alt="You get: a white computer with matching peripherals"
+          />
+          <button class="btn fit">BUY NOW</button>
+        </article>
+
+        <article class="prog__cont">
+          <h1 class="prog__title heading tertiary sub">Massage & Spa</h1>
+          <p class="prog__txt copy">This is the best computer money can buy, if you don’t have much money.</p>
+          <ul class="prog__list minCopy">
+            <li class="prog__item">Computer</li>
+            <li class="prog__item">Monitor</li>
+            <li class="prog__item">Keyboard</li>
+            <li class="prog__item">Mouse</li>
+          </ul>
+          <img
+            class="prog__img u-margin-bottom-medium"
+            src="img/prog-2.jpg"
+            alt="You get: a white computer with matching peripherals"
+          />
+          <button class="btn fit">BUY NOW</button>
+        </article>
+
+        <article class="prog__cont">
+          <h1 class="prog__title heading tertiary sub">Massage & Spa</h1>
+          <p class="prog__txt copy">This is the best computer money can buy, if you don’t have much money.</p>
+          <ul class="prog__list minCopy">
+            <li class="prog__item">Computer</li>
+            <li class="prog__item">Monitor</li>
+            <li class="prog__item">Keyboard</li>
+            <li class="prog__item">Mouse</li>
+          </ul>
+          <img
+            class="prog__img u-margin-bottom-medium"
+            src="img/prog-3.jpg"
+            alt="You get: a white computer with matching peripherals"
+          />
+          <button class="btn fit">BUY NOW</button>
+        </article>
+      </section>
+
+      <!-- CLIENT Container -->
+      <section class="clientWrap">
+        <h2 class="heading secondary">Thats what they say</h2>
+        <article class="client">
+          <div class="client__stack">
+            <blockquote class="client__txt minCopy">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat asperiores, temporibus
+                aspernatur suscipit doloremque optio est facere rem necessitatibus magni culpa, facilis voluptatem.
+                Sint?
+              </p>
+            </blockquote>
+
+            <div class="client__credit copy">
+              <span class="copy">
+                <img class="client__pic" src="./img/cl-1.jpg" alt="cl-1" />
+                &nbsp; &nbsp;
+                <p>- Jane Doe CEO-ABC Inc.</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="client__stack">
+            <blockquote class="client__txt minCopy">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat asperiores, temporibus
+                aspernatur suscipit doloremque optio est facere rem necessitatibus magni culpa, facilis voluptatem.
+                Sint?
+              </p>
+            </blockquote>
+
+            <div class="client__credit copy">
+              <span class="copy">
+                <img class="client__pic" src="./img/cl-2.jpg" alt="cl-1" />
+                &nbsp; &nbsp;
+                <p>- Jane Doe CEO-ABC Inc.</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="client__stack">
+            <blockquote class="client__txt minCopy">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat asperiores, temporibus
+                aspernatur suscipit doloremque optio est facere rem necessitatibus magni culpa, facilis voluptatem.
+                Sint?
+              </p>
+            </blockquote>
+
+            <div class="client__credit copy">
+              <span class="copy">
+                <img class="client__pic" src="./img/cl-3.jpg" alt="cl-1" />
+                &nbsp; &nbsp;
+                <p>- Jane Doe CEO-ABC Inc.</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="client__stack">
+            <blockquote class="client__txt minCopy">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat asperiores, temporibus
+                aspernatur suscipit doloremque optio est facere rem necessitatibus magni culpa, facilis voluptatem.
+                Sint?
+              </p>
+            </blockquote>
+
+            <div class="client__credit copy">
+              <span class="copy">
+                <img class="client__pic" src="./img/cl-4.jpg" alt="cl-1" />
+                &nbsp; &nbsp;
+                <p>- Jane Doe CEO-ABC Inc.</p>
+              </span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <include src="partials/footer.html"></include>
+  </body>
+</html>

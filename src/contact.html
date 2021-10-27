@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Google FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;700&family=Roboto+Slab:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled SAAS style link and favicon image-->
+    <link rel="stylesheet" href="sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <!-- FONTAWESOME -->
+    <script src="https://use.fontawesome.com/6dfc7b2399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+
+    <script type="module" defer src="js/contact.js"></script>
+
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <div class="contact-page">
+      <include src="partials/header.html"></include>
+      <include src="partials/pageheader.html"></include>
+
+      <section class="locMap">
+        <div id="issMap" class="locMap__map"></div>
+      </section>
+
+      <!-- Section CONTACT FORM -->
+      <section class="contact-wrap">
+        <div class="contact">
+          <h1 class="contact__title heading tertiary">Always happy to help</h1>
+          <section class="contact__details">
+            <div class="contact__details">
+              <h4 class="heading tertiary sub"><i class="fa fa-address-card">&nbsp;</i>Company Address</h4>
+              <address class="copy">
+                Melbourne, Vic 3190<br />
+                Tel: xxxx xxxx xxxxxx<br />
+                Email: <a href="#">contact@domain.com</a>
+              </address>
+            </div>
+
+            <div class="contact__details">
+              <h4 class="heading tertiary sub"><i class="fa fa-envelope">&nbsp;</i>Email</h4>
+              <address class="copy">
+                marketing@sampledomain.com<br />
+                admin@sampledomain.com<br />
+                Email: <a href="#">contact@domain.com</a>
+              </address>
+            </div>
+
+            <div class="contact__details">
+              <h4 class="heading tertiary sub"><i class="fa fa-phone">&nbsp;</i>Phone Numbers</h4>
+              <address class="copy">
+                Melbourne: 02 4521 8005<br />
+                London: 04 5896 6256<br />
+              </address>
+            </div>
+          </section>
+
+          <form action="" class="contact__form">
+            <div class="contact__fName">
+              <label for="fName"></label>
+              <span class="lable-text">First Name</span>
+              <input type="text" id="fName" name="firstname" placeholder="Your first name..." required />
+            </div>
+
+            <div class="contact__lName">
+              <label for="lName" class="contact__lName"></label>
+              <span class="lable-text">Last Name</span>
+
+              <input type="text" id="lName" name="lastname" placeholder="Your name.." required />
+            </div>
+
+            <div class="contact__email">
+              <label for="fEmail"></label>
+              <span class="label-text">Email</span>
+
+              <input type="email" id="fEmail" name="email" placeholder="Your Email.." required />
+            </div>
+
+            <div class="contact__country">
+              <label class="contact__cList" for="country"></label>
+              <span class="lable-text">Country</span>
+              <select id="country" class="contact__category" name="country">
+                <option value="">- Select -</option>
+                <option value="alpha">Option alpha</option>
+                <option value="beta">Option beta</option>
+                <option value="gamma">Option gamma</option>
+                <option value="delta">Option delta</option>
+                <option value="epsilon">Option epsilon</option>
+                <option value="zeta">Option zeta</option>
+                <option value="eta">Option eta</option>
+                <option value="theta">Option theta</option>
+              </select>
+            </div>
+
+            <div class="contact__subject">
+              <label class="contact__subject" for="subject"></label>
+              <span class="lable-text">Subject</span>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height: 40px"></textarea>
+            </div>
+
+            <input class="contact__subBtn btn small" type="submit" value="Submit" />
+            <input class="contact__resBtn btn small" type="reset" value="Reset" />
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER Container -->
+      <include src="partials/footer.html"></include>
+    </div>
+  </body>
+</html>

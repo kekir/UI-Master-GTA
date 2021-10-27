@@ -1,0 +1,152 @@
+.modal-login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50rem;
+  z-index: 1000;
+  transition: all 0.5s;
+  overflow: auto;
+  background-color: $color-white;
+  box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
+
+  display: grid;
+
+  &__pic {
+    justify-self: center;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 50%;
+  }
+
+  &__header {
+    justify-self: center;
+    font-size: 1.65rem;
+
+    line-height: 1.5;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    // position: relative;
+    // align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+
+    border: 0.15rem solid $color-secondary-light;
+  }
+
+  &__userName {
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 100%;
+  }
+
+  &__userName input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  &__passwd {
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 100%;
+  }
+
+  &__passwd input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  // &__close {
+  //   font-family: inherit;
+  //   color: inherit;
+  //   position: absolute;
+  //   top: 0.5rem;
+  //   right: 2rem;
+  //   font-size: 4rem;
+  //   cursor: pointer;
+  //   border: none;
+  //   background: none;
+  // }
+
+  &__loginBtn {
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 50%;
+  }
+
+  &__rem {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  // &__cancel {
+  //   grid-column: 1/2;
+  //   justify-self: center;
+  //   width: 100%;
+  // }
+
+  &__forgotPsw {
+    grid-column: 2 / 3;
+    justify-self: end;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  // backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.btn--cancel-login {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

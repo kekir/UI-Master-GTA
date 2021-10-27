@@ -1,0 +1,198 @@
+.footer {
+  grid-area: footer;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'about ter-nav social newsletter';
+  grid-gap: 0 2rem;
+
+  background-color: $color-grey-dark;
+
+  @include respond(tab-land) {
+    grid-template-areas:
+      'about about ter-nav ter-nav'
+      'social social newsletter newsletter';
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'about about'
+      'ter-nav ter-nav'
+      'social social'
+      'newsletter newsletter';
+  }
+
+  &__about {
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+    padding: 2rem 2rem;
+
+    color: $color-white;
+
+    &__title {
+    }
+
+    &__txt {
+      padding-top: 1rem;
+    }
+
+    &__list {
+      padding-top: 1rem;
+      list-style: none;
+      color: $color-white;
+    }
+
+    @include respond(phone) {
+      padding-top: 1rem;
+    }
+  }
+
+  &__nav {
+    grid-area: ter-nav;
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 2rem;
+    width: 100%;
+
+    color: $color-white;
+  }
+
+  &__social {
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    width: 100%;
+    padding: 2rem 2rem;
+    color: $color-white;
+
+    .title {
+      color: $color-white;
+    }
+
+    .list {
+      align-items: flex-start;
+
+      padding-top: 1rem;
+      list-style: none;
+    }
+
+    .item {
+      padding: 0.5rem 0;
+    }
+
+    .link {
+      padding: 2rem 0;
+      text-decoration: none;
+      color: $color-white;
+    }
+
+    .hr {
+      border-bottom: 1px solid white;
+    }
+  }
+
+  &__newsletter {
+    grid-area: newsletter;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem 2rem;
+    color: $color-white;
+  }
+
+  &__copyrights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 2rem 2rem;
+    color: $color-grey-light;
+
+    &__title {
+      color: $color-white;
+    }
+
+    &__txt {
+      padding-top: 1rem;
+      color: $color-white;
+    }
+
+    &__iName {
+      padding: 1rem;
+      height: 2rem;
+      width: 100%;
+
+      @include respond(phone) {
+        margin-top: 0.5rem;
+      }
+    }
+
+    &__iEmail {
+      padding: 1rem;
+      height: 2rem;
+      width: 100%;
+
+      @include respond(phone) {
+        margin-top: 0.5rem;
+      }
+    }
+
+    &__subBtn {
+      max-width: 50%;
+
+      @include respond(phone) {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &__title {
+    color: $color-secondary-medium;
+  }
+
+  &__list {
+    padding-top: 1rem;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 0.5rem 0;
+    columns: $color-white;
+  }
+
+  &__link {
+    padding: 2rem 0;
+    text-decoration: none;
+
+    color: $color-white;
+
+    &:hover {
+      color: $color-secondary-light;
+    }
+  }
+
+  &__subBtn {
+    width: 50%;
+    align-self: center;
+  }
+
+  &__hr {
+    border-bottom: 0.5px solid $color-secondary-light;
+    width: 100%;
+  }
+}
+
+#name {
+  height: 10%;
+}
+#email {
+  height: 10%;
+}

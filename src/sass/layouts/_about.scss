@@ -1,0 +1,257 @@
+// Section ABOUT ME
+.about {
+  grid-area: about;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'abtheader abtheader'
+    'textwrap fig';
+  grid-gap: 2rem;
+
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  background-color: beige;
+
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'abtheader'
+      'textwrap'
+      'fig';
+  }
+
+  &__header {
+    grid-area: abtheader;
+  }
+
+  &__title {
+    text-align: center;
+    color: $color-grey-dark;
+  }
+
+  &__subtitle {
+    text-align: center;
+    color: $color-grey-dark;
+  }
+
+  &__txtwrap {
+    grid-area: textwrap;
+    align-self: center;
+
+    @include respond(tab-port) {
+      grid-column: 1 / -1;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__figure {
+    grid-area: fig;
+    background-color: $color-grey-dark;
+
+    @include respond(tab-port) {
+      grid-column: 1 / -1;
+      grid-template-columns: 1fr;
+    }
+
+    figcaption {
+      background-color: $color-grey-dark;
+      color: $color-white;
+      font-style: italic;
+      padding: 0.25rem;
+      text-align: center;
+    }
+  }
+
+  &__pic {
+    width: 100%;
+    height: auto;
+    // object-fit: cover;
+    // object-position: center 60%;
+  }
+}
+
+// Section EXPERIENCE
+.experience {
+  grid-area: experience;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    'expheader expheader'
+    'exp exp';
+  grid-gap: 0 2rem;
+
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  background-color: beige;
+  text-align: center;
+}
+
+.experience > h1 {
+  grid-area: expheader;
+}
+
+.exp {
+  grid-area: exp;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 2rem 4rem;
+
+  &__header {
+    grid-column: 1/2;
+    text-align: left;
+    color: $color-grey-dark;
+
+    @include respond(tab-land) {
+      grid-column: 1/-1;
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    grid-column: 2/-1;
+    text-align: left;
+    color: $color-grey-dark;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: $color-grey-dark;
+    text-align: left;
+
+    @include respond(tab-land) {
+      grid-column: 1/-1;
+      text-align: center;
+    }
+  }
+
+  &__copy {
+    grid-column: 1 / -1;
+
+    padding: 1rem;
+    color: $color-grey-dark;
+
+    @include respond(phone) {
+      grid-column: 1 / -1;
+      padding-left: 0;
+    }
+  }
+
+  &__dots {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    text-align: center;
+
+    &__dot {
+      height: 8px;
+      width: 8px;
+      background-color: $color-grey-medium;
+      border-radius: 50%;
+
+      display: inline-block;
+    }
+  }
+
+  &__subhead--1 {
+    grid-row: 3;
+    grid-column: 1 / 2;
+
+    padding-left: 2rem;
+    color: $color-grey-dark;
+
+    @include respond(phone) {
+      grid-column: 1 / -1;
+      padding: 1rem 0 0 0;
+    }
+  }
+
+  &__list--1 {
+    grid-row: 4;
+    grid-column: 1 / 2;
+
+    padding: 0 0 2rem 4rem;
+
+    @include respond(phone) {
+      grid-row: 5;
+      grid-column: 1 / -1;
+
+      padding-left: 2rem;
+    }
+  }
+
+  &__subhead--2 {
+    grid-row: 3;
+    grid-column: 2 / 3;
+
+    padding-left: 2rem;
+    color: $color-grey-dark;
+
+    @include respond(phone) {
+      grid-row: 6;
+      grid-column: 1 / -1;
+
+      padding-left: 0;
+    }
+  }
+
+  &__list--2 {
+    grid-row: 4;
+    grid-column: 2 / 3;
+    padding-left: 4rem;
+
+    @include respond(phone) {
+      grid-row: 7;
+      grid-column: 1 / -1;
+
+      padding-left: 2rem;
+    }
+  }
+}
+
+.hr {
+  border-top: 1px solid $color-grey-light;
+}
+
+// Section SKILLS
+.skills-wrap {
+  grid-area: skills;
+
+  color: $color-white;
+  background-color: $color-grey-dark;
+  text-align: center;
+}
+
+.skills {
+  width: 100%;
+  padding: 2rem 0 2rem 1rem;
+
+  &__title {
+    text-align: left;
+  }
+
+  &__type {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+
+  &__html {
+    width: 90%;
+    height: 2rem;
+    background-color: $color-primary-medium;
+  }
+  &__css {
+    width: 80%;
+    height: 2rem;
+    background-color: $color-tertiary-medium;
+  }
+  &__js {
+    width: 75%;
+    height: 2rem;
+    background-color: $color-secondary-medium;
+  }
+  &__node {
+    width: 40%;
+    height: 2rem;
+    background-color: $color-grey-medium;
+  }
+}

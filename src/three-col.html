@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Google FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;700&family=Roboto+Slab:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTAWESOME -->
+    <script src="https://use.fontawesome.com/6dfc7b2399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Compiled SAAS style link and favicon image-->
+    <link type="text/css" rel="stylesheet" href="sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script type="module" src="./js/three-col.js"></script>
+
+    <title>Base Theme</title>
+  </head>
+
+  <body>
+    <div class="fullwidth-page">
+      <!-- HEADER Container -->
+      <include src="partials/header.html"></include>
+      <include src="partials/pageheader.html"></include>
+
+      <nav class="sec-nav" aria-label="Secondary">
+        <ul class="sec-nav__list">
+          <li class="sec-nav__item"><a class="sec-nav__link" href="#">Home</a></li>
+          <li class="sec-nav__item"><a class="sec-nav__link" href="#">About</a></li>
+          <li class="sec-nav__item"><a class="sec-nav__link" href="#">Products</a></li>
+          <li class="sec-nav__item"><a class="sec-nav__link" href="#">Services</a></li>
+          <li class="sec-nav__item"><a class="sec-nav__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main class="main">
+        <!-- <section class="about">
+          <h1 class="about__title heading secondary">About Title</h1>
+          <h3 class="about__subtitle heading tertiary sub">
+            Our mission is very clear - provide best and fully tested products and solutions for our customers
+          </h3>
+
+          <img class="about__pic" src="img/folio-1.jpg" alt="Yummy Taco" />
+          <div class="about__txtwrap">
+            <h2 class="about__subtitle heading tertiary">About Subtitle</h2>
+            <p class="about__copy copy">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae odit labore ratione recusandae velit sit
+              obcaecati sed est laboriosam accusantium aliquam quia veniam cumque eius vel voluptate enim rem inventore,
+              nesciunt, at ab vero distinctio assumenda eveniet? Accusamus nemo quos at, consequatur exercitationem vel
+              expedita! Distinctio enim saepe reiciendis obcaecati.
+            </p>
+            <button class="btn small">Learn More →</button>
+          </div>
+        </section> -->
+
+        <section class="features">
+          <h1 class="features__title heading secondary">We do this</h1>
+          <h3 class="features__subtitle heading tertiary sub">
+            Our mission is very clear - provide best and fully tested products and solutions for our customers
+          </h3>
+
+          <article class="feature">
+            <div class="feature__header">
+              <i class="icon fa fa-user fa-3x"></i>
+              <h2 class="feature__title heading tertiary">Mauris maximus</h2>
+              <h2 class="feature__subtitle heading tertiary sub">Mauris maximus</h2>
+            </div>
+
+            <figure class="feature__figure">
+              <img class="feature__pic" src="img/folio-1.jpg" alt="unitech" />
+              <figcaption>A classic UI example</figcaption>
+            </figure>
+
+            <p class="feature__copy copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem dicta cum voluptate non
+              explicabo maxime dolorum molestias perspiciatis consequuntur!
+            </p>
+
+            <div class="feature__actions">
+              <button class="btn">Call to</button>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature__header">
+              <i class="icon fa fa-user fa-3x"></i>
+              <h2 class="feature__title heading tertiary">Mauris maximus</h2>
+              <h2 class="feature__subtitle heading tertiary sub">Mauris maximus</h2>
+            </div>
+
+            <figure class="feature__figure">
+              <img class="feature__pic" src="img/folio-2.jpg" alt="unitech" />
+              <figcaption>A classic UI example</figcaption>
+            </figure>
+
+            <p class="feature__copy copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem dicta cum voluptate non
+              explicabo maxime dolorum molestias perspiciatis consequuntur!
+            </p>
+
+            <div class="feature__actions">
+              <button class="btn">Call to</button>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature__header">
+              <i class="icon fa fa-user fa-3x"></i>
+              <h2 class="feature__title heading tertiary">Mauris maximus</h2>
+              <h2 class="feature__subtitle heading tertiary sub">Mauris maximus</h2>
+            </div>
+
+            <figure class="feature__figure">
+              <img class="feature__pic" src="img/folio-3.jpg" alt="unitech" />
+              <figcaption>A classic UI example</figcaption>
+            </figure>
+
+            <p class="feature__copy copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem dicta cum voluptate non
+              explicabo maxime dolorum molestias perspiciatis consequuntur!
+            </p>
+
+            <div class="feature__actions">
+              <button class="btn">Call to</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="gallery">
+          <h2 class="gallery__title heading secondary">Our Gallery</h2>
+          <img class="gallery__pic" src="https://source.unsplash.com/random/201x201" alt="" />
+          <img class="gallery__pic" src="https://source.unsplash.com/random/202x202" alt="" />
+          <img class="gallery__pic" src="https://source.unsplash.com/random/203x203" alt="" />
+          <img class="gallery__pic" src="https://source.unsplash.com/random/204x204" alt="" />
+          <img class="gallery__pic" src="https://source.unsplash.com/random/205x205" alt="" />
+          <img class="gallery__pic" src="https://source.unsplash.com/random/206x206" alt="" />
+          <img class="gallery__pic" src="https://source.unsplash.com/random/207x207" alt="" />
+          <img class="gallery__pic" src="https://source.unsplash.com/random/207x208" alt="" />
+          <img class="gallery__pic" src="https://source.unsplash.com/random/207x209" alt="" />
+          <img class="gallery__pic" src="https://source.unsplash.com/random/207x210" alt="" />
+        </section>
+      </main>
+
+      <aside class="sidebar" aria-label="Sidebar ">
+        <section class="share">
+          <h2 class="heading tertiary sub">Share</h2>
+          <ul class="share__list">
+            <li class="share__item"><a class="share__link" href="#">Facebook</a></li>
+            <li class="share__item"><a class="share__link" href="#">Twitter</a></li>
+            <li class="share__item"><a class="share__link" href="#">Email</a></li>
+          </ul>
+        </section>
+        <section class="recommended">
+          <h2 class="heading tertiary sub">Recommended</h2>
+          <ul class="recommended__list">
+            <li class="recommended__item">
+              <article>
+                <h3><a href="#">Related article</a></h3>
+                <p>Article description</p>
+              </article>
+            </li>
+            <li class="recommended__item">
+              <article>
+                <h3><a href="#">Related article</a></h3>
+                <p>Article description</p>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- FOOTER -->
+      <include src="partials/footer.html"></include>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Google FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;700&family=Roboto+Slab:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled SAAS style link and favicon image-->
+    <link type="text/css" rel="stylesheet" href="sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <!-- FONTAWESOME -->
+    <script src="https://use.fontawesome.com/6dfc7b2399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script type="module" defer src="js/about.js"></script>
+
+    <title>About</title>
+  </head>
+
+  <body>
+    <div class="about-page">
+      <!-- HEADER Container -->
+      <include src="partials/header.html"></include>
+      <include src="partials/pageheader.html"></include>
+
+      <!-- ABOUT -->
+      <section class="about">
+        <div class="about__header">
+          <h1 class="about__title heading secondary">About Title</h1>
+          <h3 class="about__subtitle heading tertiary sub">
+            Our mission is very clear - provide best and fully tested products and solutions for our customers
+          </h3>
+        </div>
+
+        <div class="about__txtwrap">
+          <h1 class="heading secondary">Keki. R</h1>
+          <h1 class="heading tertiary sub">designer / developer</h1>
+          <p class="about__copy copy">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas voluptate distinctio nulla laudantium
+            laborum expedita maxime quasi! Sint repudiandae eaque enim repellat excepturi! Ea at nihil dignissimos
+            consequatur omnis, consequuntur harum sit veniam vel ut repellendus aut. Laborum omnis blanditiis quibusdam
+            facere sunt? Illum ut, aut praesentium aliquid aliquam dolorum voluptates consequuntur facilis est
+            aspernatur. Unde, porro quo odit illo iusto quas, sunt cupiditate natus eligendi veritatis tempora totam!
+            Facilis maxime dolor nobis pariatur quasi!
+          </p>
+          <button class="btn small">Learn More →</button>
+        </div>
+
+        <figure class="about__figure">
+          <img class="about__pic" src="img/man.png" alt="unitech" />
+          <figcaption>A classic UI example</figcaption>
+        </figure>
+      </section>
+
+      <!-- EXP -->
+      <section class="experience">
+        <h1 class="heading secondary">Experience</h1>
+
+        <div class="exp">
+          <div class="exp__header">
+            <h3 class="heading tertiary">Frontend Development</h3>
+            <h3 class="heading tertiary sub">Melbourne Australia</h3>
+          </div>
+
+          <div class="exp__desc">
+            <p class="exp__copy copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aut tenetur, dicta ad eligendi alias magni
+              numquam ea optio ipsum ab! Iure tempora magnam consectetur libero velit nisi, non sunt odio, tenetur modi
+              labore aliquam maiores mollitia eligendi amet expedita ducimus. Eaque id quod, provident nam aliquid saepe
+              natus reiciendis?
+            </p>
+
+            <div class="exp__dots">
+              <span class="exp__dots__dot"></span>
+              <span class="exp__dots__dot"></span>
+              <span class="exp__dots__dot"></span>
+            </div>
+
+            <h4 class="exp__subhead--1 heading tertiary sub">
+              Responsibilities:
+              <hr class="hr" />
+            </h4>
+            <ul class="exp__list--1 minCopy">
+              <li class="exp__item">Dolor pulvinar amet etiam.</li>
+              <li class="exp__item">Sagittis adipiscing lorem eleifend.</li>
+              <li class="exp__item">Felis enim feugiat viverra.</li>
+              <li class="exp__item">Felis enim feugiat viverra.</li>
+            </ul>
+
+            <h4 class="exp__subhead--2 heading tertiary sub">
+              Responsibilities:
+              <hr class="hr" />
+            </h4>
+            <ul class="exp__list--2 minCopy">
+              <li class="exp__item">Dolor pulvinar amet etiam.</li>
+              <li class="exp__item">Sagittis adipiscing lorem eleifend.</li>
+              <li class="exp__item">Felis enim feugiat viverra.</li>
+              <li class="exp__item">Felis enim feugiat viverra.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills-wrap">
+        <h1 class="heading secondary">My Skills</h1>
+
+        <div class="skills">
+          <p class="skills__title heading tertiary sub">HTML</p>
+          <div class="skills__html">90%</div>
+
+          <p class="skills__title heading tertiary sub">CSS</p>
+          <div class="skills__css">80%</div>
+
+          <p class="skills__title heading tertiary sub">JavaScript</p>
+          <div class="skills__js">75%</div>
+
+          <p class="skills__title heading tertiary sub">Node JS</p>
+          <div class="skills__node">40%</div>
+        </div>
+      </section>
+
+      <!-- FOOTER Container -->
+      <include src="partials/footer.html"></include>
+    </div>
+  </body>
+</html>

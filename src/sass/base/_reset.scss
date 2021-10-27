@@ -1,0 +1,236 @@
+// Resets
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  /* 
+  This is a DESKTOP FIRST DESIGN
+  This defines what 1rem is
+  If the Root font size is 16px then 1rem = 16px
+  To make 1rem = 10px; We 10px/16px = 62.5% = 10px
+  */
+
+  // WIDTH 1800-1200
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 10px; 10px/16px = 62.5%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 56.25%; // To make 1rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(phone) {
+    // width < 600?
+    font-size: 50%; // To make 1rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    // width > 1800
+    font-size: 75%; // To make 1rem = 12, 12/16 = 75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  // box-shadow: 0.5rem 0.5rem 1rem 0 $color-grey-light;
+}
+
+// ::selection {
+//   background-color: $color-primary-medium;
+//   color: $color-white;
+// }
+
+// 1140pixels BASE GRID
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 6vh minmax(min-content, auto);
+  grid-template-columns: 10% repeat(10, 1fr) 10%;
+  // grid-template-columns: 10% repeat(10, 8%) 10%;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'slider slider slider slider slider slider slider slider slider slider slider slider'
+    '. brags brags brags brags brags brags brags brags brags brags .'
+    'prlx prlx prlx prlx prlx prlx prlx prlx prlx prlx prlx prlx'
+    '. . prog prog prog prog prog prog prog prog . .'
+    '. client client client client client client client client client client .'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  gap: 0;
+
+  &::before {
+    content: '';
+    display: block;
+    grid-area: divider;
+    border-bottom: 1px dashed #000;
+  }
+
+  @include respond(tab-land) {
+    grid-template-areas:
+      'header header header header header header header header header header header header'
+      'slider slider slider slider slider slider slider slider slider slider slider slider'
+      '. brags brags brags brags brags brags brags brags brags brags .'
+      'prlx prlx prlx prlx prlx prlx prlx prlx prlx prlx prlx prlx'
+      '. . prog prog prog prog prog prog prog prog . .'
+      '. client client client client client client client client client client .'
+      'footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  @include respond(phone) {
+    grid-template-areas:
+      'header header header header header header header header header header header header'
+      'slider slider slider slider slider slider slider slider slider slider slider slider'
+      '. brags brags brags brags brags brags brags brags brags brags .'
+      'prlx prlx prlx prlx prlx prlx prlx prlx prlx prlx prlx prlx'
+      '. . prog prog prog prog prog prog prog prog . .'
+      '. client client client client client client client client client client .'
+      'footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+}
+
+.about-page {
+  @extend .wrapper;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+    '. . about about about about about about about about . .'
+    '. experience experience experience experience experience experience experience experience experience experience .'
+    '. skills skills skills skills skills skills skills skills skills skills .'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  gap: 0;
+
+  // background-color: #b85b26;
+}
+
+.service-page {
+  @extend .wrapper;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+    '. . services services services services services services services services . .'
+    '. . operations operations operations operations operations operations operations operations . .'
+    '. . tech tech tech tech tech tech tech tech . .'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  gap: 0;
+
+  // background-color: #b85b26;
+}
+
+.folio-page {
+  @extend .wrapper;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+    '. . folio folio folio folio folio folio folio folio . .'
+    '. . gal gal gal gal gal gal gal gal . .'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  gap: 0;
+
+  // background-color: #b85b26;
+}
+
+.blog-page {
+  @extend .wrapper;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+    '. . blog blog blog blog blog blog blog blog . .'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  gap: 0;
+
+  // background-color: #b85b26;
+}
+
+.contact-page {
+  @extend .wrapper;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+    '. . loc loc loc loc loc loc loc loc . .'
+    '. . contact contact contact contact contact contact contact contact . .'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  gap: 0;
+
+  // background-color: #b85b26;
+}
+
+.postlsb-page {
+  @extend .wrapper;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+    '. . sideleft sideleft postright postright postright postright postright postright  . .'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  gap: 0;
+
+  // background-color: #b85b26;
+
+  @include respond(tab-land) {
+    grid-template-areas:
+      'header header header header header header header header header header header header'
+      'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+      '. . postright postright postright postright postright postright postright postright . .'
+      '. . sideleft sideleft sideleft sideleft sideleft sideleft sideleft sideleft . .'
+      'footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+}
+
+.postrsb-page {
+  @extend .wrapper;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+    '. . postleft postleft postleft postleft postleft postleft sideright sideright . .'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  gap: 0;
+
+  // background-color: #b85b26;
+
+  @include respond(tab-land) {
+    grid-template-areas:
+      'header header header header header header header header header header header header'
+      'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+      '. . postleft postleft postleft postleft postleft postleft postleft postleft . .'
+      '. . sideright sideright sideright sideright sideright sideright sideright sideright . .'
+      'footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+}
+
+.fullwidth-page {
+  @extend .wrapper;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+    'sec-nav sec-nav main main main main main main main main sidebar sidebar '
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  gap: 0;
+
+  // background-color: #b85b26;
+
+  @include respond(tab-land) {
+    grid-template-areas:
+      'header header header header header header header header header header header header'
+      'pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader pheader'
+      '. main main main main main main main main main main .'
+      '. sec-nav sec-nav sec-nav sec-nav sec-nav sec-nav sec-nav sec-nav sec-nav sec-nav .'
+      '. sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar .'
+      'footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+}

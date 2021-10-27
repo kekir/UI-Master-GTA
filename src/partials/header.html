@@ -1,0 +1,61 @@
+<include src="partials/login.html"></include>
+<include src="partials/signup.html"></include>
+
+<header class="header">
+  <div class="logo-box">
+    <a href="index.html" class="logo-box__link"> Thematics </a>
+  </div>
+
+  <nav class="prim-nav" aria-label="Primary">
+    <ul class="prim-nav__menu" id="menu-list">
+      <li class="prim-nav__item"><a class="prim-nav__link" href="./index.html">Home</a></li>
+      <li class="prim-nav__item"><a class="prim-nav__link" href="./about.html">About</a></li>
+      <li class="prim-nav__item"><a class="prim-nav__link" href="./services.html">Services</a></li>
+      <li class="prim-nav__item"><a class="prim-nav__link" href="./portfolio.html">Portfolio</a></li>
+      <li class="prim-nav__item prim-nav__submenu">
+        <a tabindex="0" class="prim-nav__link" href="/blog.html">Blog</a>
+        <ul class="prim-nav__submenu__list" role="menu">
+          <li class="prim-nav__submenu__item" role="menuitem" tabindex="-1">
+            <a href="./post.html" class="prim-nav__submenu__link">RSB-Post</a>
+          </li>
+          <li class="prim-nav__submenu__item" role="menuitem" tabindex="-1">
+            <a href="./leftsidebar.html" class="prim-nav__submenu__link">LSB-Post</a>
+          </li>
+          <li class="prim-nav__submenu__item" role="menuitem" tabindex="-1">
+            <a href="./three-col.html" class="prim-nav__submenu__link">Full Width</a>
+          </li>
+        </ul>
+      </li>
+      <li class="prim-nav__item auth">
+        <a href="" class="prim-nav__link btn--show-login btn trans">Log In</a>
+      </li>
+      <li class="prim-nav__item auth">
+        <a href="" class="prim-nav__link btn--show-signup btn">Sign Up</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <ul class="auth">
+    <li class="auth__item">
+      <button href="" class="auth__cta btn--show-login btn trans">Log In</button>
+    </li>
+
+    <li class="auth__item">
+      <button href="" class="auth__cta btn--show-signup btn">Sign Up</button>
+    </li>
+  </ul> -->
+
+  <div class="search">
+    <button class="search__toggle" aria-label="Open search">Search</button>
+    <form class="search__form" action="">
+      <label class="sr-only" for="search">Search</label>
+      <input type="search" name="" id="search" placeholder="What's on your mind?" />
+    </form>
+  </div>
+
+  <div class="toggler">
+    <div class="toggler__lines line1"></div>
+    <div class="toggler__lines line2"></div>
+    <div class="toggler__lines line3"></div>
+  </div>
+</header>

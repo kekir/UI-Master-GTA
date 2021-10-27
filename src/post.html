@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Google FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;700&family=Roboto+Slab:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTAWESOME -->
+    <script src="https://use.fontawesome.com/6dfc7b2399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Compiled SAAS style link and favicon image-->
+    <link type="text/css" rel="stylesheet" href="sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script type="module" defer src="js/rightsidebar.js"></script>
+
+    <title>Right Sidebar</title>
+  </head>
+
+  <body>
+    <div class="postrsb-page">
+      <!-- HEADER Container -->
+      <include src="partials/header.html"></include>
+      <include src="partials/pageheader.html"></include>
+
+      <!-- POSTS -->
+      <div class="postleft">
+        <div class="postleft__header">
+          <h1 class="postleft__title heading secondary dark">Postleft with right Sidebar</h1>
+          <div class="postleft__share">
+            <i class="postleft__icon fa fa-3x fa-comment">&nbsp;</i>
+            <a href="#" class="postleft__tw fa fa-twitter">&nbsp;<span class="minCopy"> Share</span></a>
+            <i class="postleft__icon fa fa-3x fa-comment">&nbsp;</i>
+            <a href="#" class="postleft__db fa fa-dribbble">&nbsp;<span class="minCopy"> Share</span></a>
+            <i class="postleft__icon fa fa-3x fa-comment">&nbsp;</i>
+            <a href="#" class="postleft__in fa fa-instagram">&nbsp;<span class="minCopy"> Share</span></a>
+          </div>
+          <img class="postleft__pic--1" src="img/blog-1.jpg" alt="unitech" />
+        </div>
+
+        <div class="postleft__text">
+          <p class="copy">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestib ulum
+            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+            semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo
+          </p>
+          <p class="minCopy">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+            semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+            ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+            fermentum.
+          </p>
+        </div>
+
+        <div class="postleft__topics">
+          <article class="postleft__cont">
+            <i class="icon fa fa-user fa-3x"></i>
+            <h2 class="postleft__title heading tertiary">Mauris maximus</h2>
+            <p class="postleft__txt minCopy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, rem!</p>
+          </article>
+          <article class="postleft__cont">
+            <i class="icon fa fa-user fa-3x"></i>
+            <h2 class="postleft__title heading tertiary">Mauris maximus</h2>
+            <p class="postleft__txt minCopy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, rem!</p>
+          </article>
+          <article class="postleft__cont">
+            <i class="icon fa fa-user fa-3x"></i>
+            <h2 class="postleft__title heading tertiary">Mauris maximus</h2>
+            <p class="postleft__txt minCopy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, rem!</p>
+          </article>
+        </div>
+
+        <div class="postleft__accordion">
+          <ul class="postleft_list">
+            <li class="postleft__item" id="profile">
+              <a class="postleft__link" href="#profile">
+                <i class="fa fa-user"></i>
+                &nbsp; Sed est elit posuere ac semper at hendrerit a neque?
+              </a>
+              <ul class="postleft__list1">
+                <li class="postleft__item postleft__list1__item">
+                  <p class="postleft__list1__link minCopy">
+                    Lorem ipsum dolor sit amet tempor ac, laoreet feugiat. Proin id dui. Integer a placerat at, mollis
+                    nunc vel neque sollicitudin augue sit amet magna. Donec aliquam dictum quis, tincidunt molestie,
+                    neque nibh ultricies nec, aliquam purus. Fusce convallis non, facilisis sodales. Vivamus sem at
+                    augue. Nulla et magnis dis parturient montes, nascetur ridiculus mus. Vivamus justo.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="postleft__item" id="profile">
+              <a class="postleft__link" href="#profile">
+                <i class="fa fa-envelope"></i>
+                &nbsp; Donec vestibulum justo a diam ultricies pellentesque?
+              </a>
+              <ul class="postleft__list1">
+                <li class="postleft__item postleft__list1__item">
+                  <p class="postleft__list1__link minCopy">
+                    Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt
+                    elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor.
+                    In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum ac eros tristique
+                    dignissim. Donec aliquam velit vitae mi dictum.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="postleft__item" id="profile">
+              <a class="postleft__link" href="#profile">
+                <i class="fa fa-sign-out"></i>
+                &nbsp; Quisque mattis diam vel lacus tincidunt elementum?
+              </a>
+              <ul class="postleft__list1">
+                <li class="postleft__item postleft__list1__item">
+                  <p class="postleft__list1__link minCopy">
+                    Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt
+                    elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor.
+                    In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum ac eros tristique
+                    dignissim. Donec aliquam velit vitae mi dictum.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="postleft__item" id="profile">
+              <a class="postleft__link" href="#profile">
+                <i class="fa fa-cog"></i>
+                &nbsp; Integer a placerat at, mollis nunc vel neque sollicitudin?
+              </a>
+              <ul class="postleft__list1">
+                <li class="postleft__item postleft__list1__item">
+                  <p class="postleft__list1__link minCopy">
+                    Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt
+                    elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor.
+                    In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum ac eros tristique
+                    dignissim. Donec aliquam velit vitae mi dictum.
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="postleft__related">
+          <h3 class="heading tertiary">Related Postleft</h3>
+          <img class="postleft__pic--2" src="img/blog-1.jpg" alt="unitech" />
+          <p class="copy">Postleft with a vertical photo</p>
+          <button class="btn small">Read more...</button>
+        </div>
+        <div class="postleft__reply">
+          <h3 class="heading tertiary">Leave a reply</h3>
+          <p class="copy">
+            You must be <a href="http://localhost/wp-vs-551/wp-login.php">logged in</a> to post a reply
+          </p>
+        </div>
+      </div>
+
+      <aside class="rsidebar">
+        <div class="rsidebar__search">
+          <label for="search"></label>
+          <span class="heading tertiary sub">Search</span>
+          <input type="text" id="search" name="firstname" placeholder="Your first name..." required />
+        </div>
+
+        <div class="rsidebar__latestpost">
+          <h3 class="heading tertiary sub">Latest Posts</h3>
+          <div class="rsidebar__latestpost--1">
+            <div class="rsidebar__latestpost-txt">
+              <p class="minCopy">Content builder for posts</p>
+              <i class="post__icon fa fa-user fa"></i>
+              <span>May 17, 2020</span>
+              <p>Jane Doe CEO-ABC Inc.</p>
+            </div>
+            <img class="rsidebar__latestpost-pic" src="./img/cl-1.jpg" alt="cl-1" />
+          </div>
+          <div class="rsidebar__latestpost--1">
+            <div class="rsidebar__latestpost-txt">
+              <p class="minCopy">Content builder for posts</p>
+              <i class="post__icon fa fa-user fa"></i>
+              <span>May 17, 2020</span>
+              <p>Jane Doe CEO-ABC Inc.</p>
+            </div>
+            <img class="rsidebar__latestpost-pic" src="./img/cl-2.jpg" alt="cl-1" />
+          </div>
+
+          <div class="rsidebar__latestpost--1">
+            <div class="rsidebar__latestpost-txt">
+              <p class="minCopy">Content builder for posts</p>
+              <i class="post__icon fa fa-user fa"></i>
+              <span>May 17, 2020</span>
+              <p>Jane Doe CEO-ABC Inc.</p>
+            </div>
+            <img class="rsidebar__latestpost-pic" src="./img/cl-3.jpg" alt="cl-1" />
+          </div>
+        </div>
+
+        <div class="rsidebar__category">
+          <h3 class="heading tertiary sub">Category</h3>
+          <ul class="rsidebar__list">
+            <li class="rsidebar__item">
+              <a class="rsidebar__link" href="#">Category - 1</a>
+              <p>Category description</p>
+            </li>
+            <li class="rsidebar__item">
+              <a class="rsidebar__link" href="#">Category - 2</a>
+              <p>Category description</p>
+            </li>
+            <li class="rsidebar__item">
+              <a class="rsidebar__link" href="#">Category - 3</a>
+              <p>Category description</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rsidebar__related">
+          <h3 class="heading tertiary sub">Related</h3>
+          <ul class="rsidebar__list">
+            <li class="rsidebar__item">
+              <a class="rsidebar__link" href="#">Related article - 1</a>
+              <p>Article description</p>
+            </li>
+            <li class="rsidebar__item">
+              <a class="rsidebar__link" href="#">Related article - 2</a>
+              <p>Article description</p>
+            </li>
+            <li class="rsidebar__item">
+              <a class="rsidebar__link" href="#">Related article - 3</a>
+              <p>Article description</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rsidebar__recomended">
+          <h3 class="heading tertiary sub">Recomended</h3>
+          <ul class="rsidebar__list">
+            <li class="rsidebar__item">
+              <a class="rsidebar__link" href="#">Recomended article - 1</a>
+              <p>Article description</p>
+            </li>
+            <li class="rsidebar__item">
+              <a class="rsidebar__link" href="#">Recomended article - 2</a>
+              <p>Article description</p>
+            </li>
+            <li class="rsidebar__item">
+              <a class="rsidebar__link" href="#">Recomended article - 3</a>
+              <p>Article description</p>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- FOOTER folioainer -->
+      <include src="partials/footer.html"></include>
+    </div>
+  </body>
+</html>
